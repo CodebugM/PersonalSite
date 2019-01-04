@@ -1,0 +1,208 @@
+a {
+  color: #11999E;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+body {
+  margin: 0;
+  text-align: center; /* text-align: center in the parent element will center
+  everything inside that doesn't have a width set. */
+  /* font-family: verdana, sans-serif; */
+  /* sets the font for the rest of the text;
+  it first asks the browser to render the Verdana font. If, for some reason,
+  the browser can't display Verdana, it will default to the sans-serif typeface
+  installed. */
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  color: #66bfbf;
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem; /* 90px */ /* Dynamic font size */ /* 16px = 100% = 1em */
+  /* The dynamic em font size gets INHERITED. If the font-size of the body tag is set to
+  2em, the h1 will become 2 times 5.625em big because it is contained inside the
+  body. "rem" means root em; it ignores any parent em specifications / upstream
+  stlye changes. */
+  line-height: 2;
+  margin: 50px auto 0 auto; /* An element with a width can be centered using either
+  margin attributes; this one centers the element either horizontally; top and
+  bottom are set to 0; right and left are set to whatever they need to be to
+  center the element. 2 values: top/bottom; right/left; 4 values: top, right, bottom,
+  left */
+  width: 50%;
+}
+
+h2 {
+  color: #66bfbf;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 2.5rem; /* 40px */
+  font-weight: normal;
+}
+
+h3 {
+  color: #11999E;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+hr {
+  border: dotted #eaf6f6 6px;
+  border-bottom: none;
+  /* replaces: border-color: #eaf6f6;
+  border-style: dotted none none none;
+  border-width: 6px;  */
+  margin: 100px auto;
+  width: 5%;
+  display: inline-block;
+}
+
+p {
+  color: #40514e;
+  line-height: 2;
+}
+
+/*********************** CLASS SELECTORS ****************************/
+
+.bottom-cloud {
+  position: absolute; /* lets you position the bottom cloud freely within its parent,
+  the top container */
+  left: 180px;
+  bottom: 300px;
+}
+
+.top-cloud {
+  position: absolute; /* lets you position the top cloud freely within its parent,
+  the top container */
+  right: 300px;
+  top: 50px;
+}
+
+.top-container {
+  background-color: #eaf6f6;
+  position: relative; /* allows for the bottom and top clouds to be moved
+  freely around the screen relative its parent, the top container */
+  padding-top: 100px;
+}
+
+.middle-container {
+  margin: 4em auto 4em auto;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 30px 0 20px 0;
+}
+
+.design-image {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.form-image {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+/*
+.profile {
+  padding-bottom: 40px;
+}
+
+.skills {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.contact-me {
+  padding-top: 40px;
+}
+
+*/
+
+.profile-img {
+  border-radius: 100%;
+  width: 20%;
+}
+
+.skill-row {
+  line-height: 2;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  width: 50%;
+}
+
+/*.skills {
+  padding: 100px 0;
+} */
+
+/*  clear: left/right; clear is sort of the "anti-float" function */
+
+.butn {
+  background: #66bfbf;
+  background-image: -webkit-linear-gradient(top, #66bfbf, #11999E);
+  background-image: -moz-linear-gradient(top, #66bfbf, #11999E);
+  background-image: -ms-linear-gradient(top, #66bfbf, #11999E);
+  background-image: -o-linear-gradient(top, #66bfbf, #11999E);
+  background-image: linear-gradient(to bottom, #66bfbf, #11999E);
+  -webkit-border-radius: 11;
+  -moz-border-radius: 11;
+  border-radius: 11px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #5cadb8;
+  background-image: -webkit-linear-gradient(top, #5cadb8, #5eabab);
+  background-image: -moz-linear-gradient(top, #5cadb8, #5eabab);
+  background-image: -ms-linear-gradient(top, #5cadb8, #5eabab);
+  background-image: -o-linear-gradient(top, #5cadb8, #5eabab);
+  background-image: linear-gradient(to bottom, #5cadb8, #5eabab);
+  text-decoration: none;
+}
+
+.links {
+  margin: 10px;
+  padding-bottom: 20px;
+}
+
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 5px 0;
+}
+
+.icon-text {
+  font-size: 8px;
+  margin-bottom: 0;
+}
+
+.footer-link {
+  padding: 20px 20px;
+  font-weight: bold;
+}
+
+.freelance {
+  margin: 20px auto 10px;
+}
+
+.contact-button {
+  margin: 50px 0 20px 0;
+}
+
+.contact-text {
+  margin: 40px auto 60px;
+}
